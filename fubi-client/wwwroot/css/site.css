@@ -1,22 +1,57 @@
-html {
-  font-size: 14px;
+/*Font para el title*/
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Titulo del sitio*/
+.fubi-title {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
-@media (min-width: 768px) {
-  html {
+/*Menu hamburguesa*/
+.mobile-menu span, .mobile-menu span::before, .mobile-menu span::after {
+    background-color: #1cb696;
+}
+
+    .mobile-menu span:hover, .mobile-menu span:hover::before, .mobile-menu span:hover::after {
+        background-color: #f4c12a;
+    }
+
+/*icono*/
+.fubi-icon{
+    width: 50px;
+    padding: 5px;
+}
+
+/*Usuario*/
+
+#more-details ion-icon{
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.nav-icons ul li a ion-icon{
     font-size: 16px;
-  }
+    padding: 0;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+.list-group-item a{
+    text-decoration: none;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    .list-group-item a:hover {
+        color: #1cb696;
+    }
+
+.list-group-item a ion-icon {
+    margin-right: 5px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
+a[href="https://1.envato.market/PgJNQ"] {
+    display: none !important;
 }

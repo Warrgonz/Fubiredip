@@ -17407,7 +17407,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
     .card .card-header .card-header-right .btn.dropdown-toggle.mobile-menu span {
-        background-color: #888;
         height: 2px;
         border-radius: 5px;
     }
@@ -17415,7 +17414,6 @@ a.text-dark:hover, a.text-dark:focus {
         .card .card-header .card-header-right .btn.dropdown-toggle.mobile-menu span:after, .card .card-header .card-header-right .btn.dropdown-toggle.mobile-menu span:before {
             border-radius: 5px;
             height: 2px;
-            background-color: #888;
         }
 
 .card .card-header .card-header-right .nav-pills {
@@ -20056,7 +20054,6 @@ pre[class*=language-]:before {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0 25px;
     }
 
         .pcoded-header .m-header .logo-dark,
@@ -20370,9 +20367,7 @@ pre[class*=language-]:before {
     justify-content: center;
     width: 37px;
     height: 56px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    color: white;
     padding: 0 10px;
 }
 
@@ -20382,7 +20377,6 @@ pre[class*=language-]:before {
         display: block;
         width: 100%;
         height: 2px;
-        background-color: rgba(44, 62, 80, 0.8);
         transition: 0.3s cubic-bezier(0.97, 0.75, 0.61, 1.84);
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -20396,7 +20390,6 @@ pre[class*=language-]:before {
             position: absolute;
             left: 0;
             height: 2px;
-            background-color: rgba(44, 62, 80, 0.8);
             transition: 0.3s cubic-bezier(0.97, 0.75, 0.61, 1.84);
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -20415,15 +20408,9 @@ pre[class*=language-]:before {
             width: 40%;
         }
 
-    .mob-toggler:hover span,
-    .mobile-menu:hover span {
-        background-color: #2c3e50;
-    }
-
         .mob-toggler:hover span:after, .mob-toggler:hover span:before,
         .mobile-menu:hover span:after,
         .mobile-menu:hover span:before {
-            background-color: #2c3e50;
             width: 100%;
         }
 
@@ -20448,7 +20435,6 @@ pre[class*=language-]:before {
     height: calc(100% - 56px);
     margin-top: 56px;
     top: 0;
-    background: #2c3e50;
     color: #d0dcda;
 }
 
@@ -20462,19 +20448,7 @@ pre[class*=language-]:before {
         height: 100%;
     }
 
-    .pcoded-navbar .header-logo {
-        position: relative;
-        align-items: center;
-        display: inline-flex;
-        float: left;
-        background: #2c3e50;
-        height: 56px;
-        text-align: center;
-        width: 235px;
-        margin-right: 0;
-        padding: 10px 25px;
-        transition: all 0.3s ease-in-out;
-    }
+
 
         .pcoded-navbar .header-logo .logo-dark {
             display: none;
@@ -20519,10 +20493,11 @@ pre[class*=language-]:before {
     .pcoded-navbar .main-menu-header {
         background: #3e5871;
         position: relative;
-        padding: 20px;
+        padding-left: 20px;
+        padding-top: 10px;
         text-align: left;
         display: flex;
-        height: 82px;
+        height: 80px;
         align-items: center;
     }
 
@@ -20530,7 +20505,14 @@ pre[class*=language-]:before {
             cursor: pointer;
             display: inline-block;
             margin-left: 10px;
+            font-size: 12px;
+            padding-top: 10px;
+            padding-bottom: 5px;
         }
+
+            .user-details span{
+                font-weight: bolder;
+            }
 
             .pcoded-navbar .main-menu-header .user-details > div,
             .pcoded-navbar .main-menu-header .user-details > span {
@@ -20539,6 +20521,7 @@ pre[class*=language-]:before {
 
         .pcoded-navbar .main-menu-header .img-radius {
             width: 40px;
+            margin-top: 10px;
             transition: all 0.3s ease-in-out;
         }
 
@@ -20547,7 +20530,6 @@ pre[class*=language-]:before {
             position: relative;
             background: transparent;
             overflow: hidden;
-            padding: 0.75rem 1.85rem;
             border: none;
         }
 
@@ -21236,7 +21218,7 @@ pre[class*=language-]:before {
 
         .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header {
             display: inline-flex;
-            padding: 0 15px;
+            
         }
 
             .pcoded-navbar.theme-horizontal ~ .pcoded-header .m-header .logo-main,
@@ -21338,6 +21320,7 @@ pre[class*=language-]:before {
     position: relative;
     margin: 0 auto;
     padding-top: 0;
+    padding: 15px;
     display: block;
     clear: both;
     float: unset;
@@ -22799,23 +22782,6 @@ pre[class*=language-]:before {
         color: #fff;
     }
 
-/* ====== [ light menu style end ] ======== */
-/* ====== [ Header color start ] ======== */
-.pcoded-header[class*="header-"] .mobile-menu span {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-    .pcoded-header[class*="header-"] .mobile-menu span:after, .pcoded-header[class*="header-"] .mobile-menu span:before {
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-
-.pcoded-header[class*="header-"] .mobile-menu:hover span {
-    background-color: #fff;
-}
-
-    .pcoded-header[class*="header-"] .mobile-menu:hover span:after, .pcoded-header[class*="header-"] .mobile-menu:hover span:before {
-        background-color: #fff;
-    }
 
 @media only screen and (min-width: 992px) {
     .pcoded-header[class*="header-"] .page-header .breadcrumb-item + .breadcrumb-item::before,
@@ -26365,7 +26331,7 @@ table.dataTable.fixedHeader-floating {
     .footable .pagination > .active > a:focus, .footable .pagination > .active > a:hover,
     .footable .pagination > .active > span:focus,
     .footable .pagination > .active > span:hover {
-        background-color: #1abc9c;
+        background-color: yellow;
         border-color: #1abc9c;
     }
 
