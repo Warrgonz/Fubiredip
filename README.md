@@ -1,5 +1,6 @@
-
-![Logo]([https://solceri.s3.amazonaws.com/logoSolceri.png](https://root-projects.s3.amazonaws.com/FUBIREDIP.png))
+<p align="center">
+  <img src="https://root-projects.s3.amazonaws.com/FUBIREDIP.png" width="500" alt="FUBIREDIP-Logo" />
+</p>
 
 FUBIREDIP is a web platform developed for the FUBIREDIP Foundation, designed to manage donations and the loan services of medical and assistive equipment. This platform centralizes the management of these services, allowing administrators to maintain an efficient control of the foundation's accounting and inventory.
 
