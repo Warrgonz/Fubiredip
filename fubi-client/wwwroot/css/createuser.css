@@ -116,23 +116,6 @@ body {
     font-size: 1rem;
 }
 
- .button-crear {
-    height: 55px;
-    width: 100%;
-    color: black;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-top: 30px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    background: #f4c12a;
-}
-
-    .form button:hover {
-        color: white;
-        background: #23b196;
-    }
 
 /*Responsive*/
 @media screen and (max-width: 500px) {
