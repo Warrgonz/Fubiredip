@@ -18,7 +18,7 @@ namespace fubi_client.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult CreateUser()
         {
             return View();
         }
@@ -28,5 +28,7 @@ namespace fubi_client.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }

@@ -1,0 +1,99 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1e1e1e !important;
+}
+
+p, label, a {
+    color: white;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+.content {
+    padding: 7rem 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.half, .half .container > .row {
+    height: 100vh;
+}
+
+
+
+.half .contents, .half .bg {
+    width: 50%;
+}
+
+
+
+.half .bg {
+    background-size: cover;
+    background-position: center;
+}
+
+/*Forgot*/
+    .half a {
+        color: #f3c12a;
+        text-decoration: none;
+    }
+
+.btn-acceder {
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 54px;
+    background-color: #f3c12a;
+    border: none;
+}
+    .btn-acceder:hover {
+        background-color: #23b196;
+    }
+
+    .half a:hover {
+        color: #23b196;
+        text-decoration: none;
+    }
+
+
+
+.el-hechicero input {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.el-hechicero a ion-icon {
+   color: #fff;
+   width: 19px;
+   background-color: #23b196;
+   height: 39px;
+   margin-top: 5px;
+   border-radius: 0px 5px 5px 0px;
+   }
+
+
+.fubi-logo{
+    width: 60%;
+}
+
+@media (max-width: 991.98px) {
+    .half .bg {
+        display: none;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .half .contents, .half .bg {
+        width: 100%;
+    }
+}
+
+
+
+
