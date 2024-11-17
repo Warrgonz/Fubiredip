@@ -1,0 +1,71 @@
+﻿@model fubi_client.Models.User
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script src="~/js/User.js"></script>
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/user.css" />
+}
+
+<section class="p-3">
+    @if (ViewBag.Mensaje != null)
+    {
+        <div class="alert alert-secondary text-center">@ViewBag.Mensaje</div>
+    }
+
+    <h2>Crear Nuevo Usuario</h2>
+    <div class="d-flex flex-column rounded-circle justify-content-center align-items-center">
+        <img id="profilePic" src="~/images/no-profile-pic-icon-27.webp" width="200px" alt="Profile picture overview" />
+        <p>Prevista imagen del perfil</p>
+    </div>
+
+    <form asp-action="CrearCuenta" asp-controller="Login">
+
+
+        <div class="mb-3">
+            <label class="form-label">Identificación<span class="campos-requeridos">*</span></label>
+            <input type="text" asp-for="cedula" class="form-control"
+                   onkeyup="ConsultarNombre();">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Nombre<span class="campos-requeridos">*</span></label>
+            <input type="text" asp-for="nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Primer Apellido<span class="campos-requeridos">*</span></label>
+            <input type="text" asp-for="nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Segundo Apellido<span class="campos-requeridos">*</span></label>
+            <input type="text" asp-for="nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Teléfono<span class="campos-requeridos">*</span></label>
+            <input type="text" asp-for="nombre" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Fecha de nacimiento<span class="campos-requeridos">*</span></label>
+            <input type="date" asp-for="nombre" class="form-control">
+        </div>
+        <label for="rol">Rol<span class="campos-requeridos">*</span></label>
+        <select id="rol" class="form-control" name="rol">
+            <option value="admin">Administrador</option>
+            <option value="user">Usuario</option>
+            <option value="editor">Editor</option>
+        </select>
+        <div class="pt-3 form-group">
+            <label for="userImage">Selecciona una imagen de perfil</label>
+            <input type="file" class="form-control-file" id="userImage" onchange="previewImage(event)">
+        </div>
+        <div class="pt-3">
+            <input type="submit" class="btn btn-success btn-md mr-2" value="Crear Usuario">
+            <a href="@Url.Action("Index", "User")" class="btn btn-danger text-light btn-md">Cancelar</a>
+        </div>
+    </form>
+</section>

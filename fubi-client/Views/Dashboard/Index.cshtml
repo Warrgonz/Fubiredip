@@ -2,4 +2,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Página de inicio</h2>
+@section Styles {
+    <link rel="stylesheet" href="~/css/dashboard.css" />
+}
+
+<section class="p-3">
+    <div class="bg-inicio">
+        <h2 class="titulo-logeo">¡Bienvenido, Himalaya!</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h3>₡2,300,000</h3>
+                    <p>Dinero recaudado</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                    <h3>40</h3>
+                    <p>Artículos prestados</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="card">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                    <h3>595</h3>
+                    <p>Beneficiarios</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>

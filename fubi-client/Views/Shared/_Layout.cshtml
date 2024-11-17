@@ -18,6 +18,8 @@
     <link href="~/dist/css/plugins/perfect-scrollbar.css" rel="stylesheet" />
     <link href="~/dist/css/plugins/prism-coy.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/app.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css" />
     @RenderSection("Styles", required: false)
 </head>
 <body>
@@ -63,18 +65,18 @@
                         <label>Navigation</label>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">
+                        <a href="@Url.Action("Index", "Dashboard")" class="nav-link">
                             <span class="pcoded-micon"><ion-icon name="home-outline"></ion-icon></span><span class="pcoded-mtext">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="@Url.Action("Index", "User")" class="nav-link">
+                            <span class="pcoded-micon"><ion-icon name="person-outline"></ion-icon></span><span class="pcoded-mtext">Usuarios</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#!" class="nav-link">
                             <span class="pcoded-micon"><ion-icon name="gift-outline"></ion-icon></span><span class="pcoded-mtext">Donaciones</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            <span class="pcoded-micon"><ion-icon name="person-outline"></ion-icon></span><span class="pcoded-mtext">Usuarios</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -135,5 +137,9 @@
     <script src="~/dist/js/pcoded.min.js"></script>
     <script src="~/dist/js/uikit.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.js"></script>
+    <script src="https://kit.fontawesome.com/4ccaae5e72.js" crossorigin="anonymous"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

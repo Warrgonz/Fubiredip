@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script src="~/js/User.js"></script>
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex justify-content-between">
+        <h5 class="card-title">Lista de Usuarios</h5>
+            <a href="@Url.Action("CreateUser", "User")" class="btn-insertar">Crear Usuario</a>
+        </div>
+        <div class="table-responsive">
+            <table id="user-table" class="table text-nowrap align-middle mb-0">
+                <thead>
+                    <tr class="border-2 border-bottom border-primary border-0">
+                        <th>#</th>
+                        <th>Identificación</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

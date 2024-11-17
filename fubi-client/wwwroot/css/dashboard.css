@@ -1,0 +1,52 @@
+.bg-inicio {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/inicio-banner.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-logeo {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body > *{
+    padding: 5px;
+}   
+
+.card-body i {
+    color: #1abc9c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    font-size: 3rem;
+}
+
+.card-body h3 {
+    font-size: 35px;
+}
+
+.card-body p{
+    font-size: 25px;
+}
+
+@media (max-width: 428px) {
+    .titulo-logeo {
+        font-size: 3rem;
+    }
+}
